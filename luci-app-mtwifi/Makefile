@@ -3,7 +3,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=luci-app-mtwifi
 LUCI_TITLE:=LuCI support for mt wifi driver
 PKG_VERSION:=1
-PKG_RELEASE:=8.13
+PKG_RELEASE:=8.20
 PKG_LICENSE:=GPLv2
 PKG_MAINTAINER:=Hua Shao <nossiac@163.com>
 

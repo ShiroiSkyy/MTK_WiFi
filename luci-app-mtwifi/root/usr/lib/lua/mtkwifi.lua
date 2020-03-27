@@ -156,7 +156,8 @@ function mtkwifi.__profile_bak_path(profile)
     return bak
 end
 
-function mtkwifi.save_profile(cfgs, path)
+function mtkwifi.save_profile(cfgs, path, dev)
+    luci.sys.exec("sed -i 's/"..dev..".change = false/"..dev..".change = true/' /tmp/mtkwifi_configchanges")
 
     if not cfgs then
         mtkwifi.debug("configuration was empty, nothing saved")
